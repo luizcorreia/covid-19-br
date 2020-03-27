@@ -4,13 +4,13 @@ import { Container } from './styles';
 
 const Footer: FC = () => (
   <Container>
-    <p>Feito com carinho por estudantes da Paraíba</p>
+    <p>Desenvolvido por Luiz Correia</p>
     <a
-      href="http://github.com/henry-ns/coronavirusbr"
+      href="https://github.com/luizcorreia/covid-19-br"
       rel="noopener noreferrer"
       target="_blank"
     >
-      Saiba mais sobre a gente
+      Saiba mais
     </a>
   </Container>
 );

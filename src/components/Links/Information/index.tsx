@@ -4,7 +4,7 @@ import Img, { FluidObject } from 'gatsby-image';
 
 import Button from '~/components/Button';
 
-import { Container } from './styles';
+import { Container, ImageContainer } from './styles';
 
 interface Props {
   data: {
@@ -18,7 +18,11 @@ interface Props {
 
 const Link: FC<Props> = ({ data }) => (
   <Container>
-    <Img fluid={data.fluid} />
+    <ImageContainer>
+      <Img fluid={data.fluid} style={{ padding: '1rem', maxHeight: 'calc(50vh - 4rem)' }}
+   imgStyle={{ objectFit: 'contain' }} />
+    </ImageContainer>
+
     <div>
       <h1>{data.title}</h1>
       <p>{data.description}</p>
